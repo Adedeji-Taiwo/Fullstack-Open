@@ -1,4 +1,4 @@
-#new_note_JS
+# new_note_JS
 ```
 title New Note Creation Process for a Page Containing JavaScript
 

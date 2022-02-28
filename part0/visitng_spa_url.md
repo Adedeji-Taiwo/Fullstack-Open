@@ -1,4 +1,4 @@
-#Visiting Single Page Application URL
+# Visiting Single Page Application URL
 
 ```
 title Visiting a Single Page Application URL
