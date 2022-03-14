@@ -7,7 +7,7 @@ Let's continue our introduction to React. First, we will take a look at how to r
 * Phonebook:  Exercise 2.1 - 2.11
   
 
-* Data for countries:  Exercise 2.12 - 1.10
+* Data for countries:  Exercise 2.12 - 2.14
 
 
 * Anecdotes:  Exercise 1.11 -1.14

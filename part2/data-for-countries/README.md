@@ -9,10 +9,9 @@ Create an application, in which one can look at data of various countries. The a
 ## Steps
 
 - Step 1: The country to be shown is found by typing a search query into the search field. If there are too many (over 10) countries that match the query, then the user is prompted to make their query more specific.
-- Step 2: Show also the sum of the exercises of the course.
-- Step 3: Calculate the sum of exercises with the array method reduce.
-- Step 4: Extend our application to allow for an arbitrary number of courses.
-- Step 5: Declare the Course component as a separate module, which is imported by the App component.
+- Step 2: Improve on the application in the previous exercise, such that when the names of multiple countries are shown on the page there is a button next to the name of the country, which when pressed shows the view for that country.
+- Step 3: Add to the view showing the data of a single country, the weather report for the capital of that country.
+
 
 
 ## Start the Application
