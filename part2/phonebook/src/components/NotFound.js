@@ -1,5 +1,5 @@
 import React from 'react'
 
-const NotFound = () => <h4>No matches found</h4>
+const NotFound = ({message}) => <h4>{message}</h4>
 
 export default NotFound;

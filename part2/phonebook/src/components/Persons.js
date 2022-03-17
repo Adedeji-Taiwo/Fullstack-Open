@@ -1,18 +1,14 @@
 import React from 'react'
-import SinglePerson from './SinglePerson'
-import NotFound from './NotFound'
+import Button from './Button'
 
 
-const Persons = ({filtered}) => {
-  return (
-     <div>
-           {filtered && filtered.length > 0 ? (
-             filtered.map(person => <SinglePerson key = {person.name} person={person}/>)
-           ) : (
-             <NotFound />
-           )}
-      </div>
-  )
+const Persons = ({person: {name, number}, handleRemoval}) => {
+   return(
+        <p>
+             <span>{name} {number}</span>{" "}
+             <Button handleRemoval={handleRemoval}/>
+        </p>
+    )
 }
 
-export default Persons
+export default Persons;
