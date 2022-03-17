@@ -4,6 +4,7 @@ NB: It's recommended to do all of the exercises from this part into a new dedica
 
 NB: Because this is not a frontend project and we are not working with React, the application is not created with create-react-app. You initialize this project with the npm init command that was demonstrated earlier in this part of the material.
 
+- Live link: https://phonebookappz.herokuapp.com/
 
 ## Steps
 
