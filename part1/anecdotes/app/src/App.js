@@ -13,6 +13,7 @@ function App() {
   const [votes, setVotes] = useState(new Array(anecdotes.length).fill(0));
   const [hasVotes, setHasVotes] = useState(false);
 
+  
   const handleRandomAnecdote = () => {
     const random = Math.floor(Math.random() * anecdotes.length);
     setSelected(random);

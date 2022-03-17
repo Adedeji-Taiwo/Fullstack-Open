@@ -1,5 +1,7 @@
 const express = require("express");
 const morgan = require('morgan');
+const cors = require("cors");
+require('dotenv').config();
 
 
 const app = express();
@@ -16,6 +18,8 @@ morgan.token('body', req => {
 //middleware to log messages to console
 app.use(morgan(':method :url :status :req[body] :res[content-length] - :response-time ms :body'));
 
+//middleware to use and allow for requests from all origins
+app.use(cors())
 
 
 
@@ -126,7 +130,17 @@ app.get('/api/persons/:id', (req, res) => {
 
 
 
-const PORT = 3001;
+ 
+//middleware after routes to raise flags for unknown routes
+const unKnownEndPoint = (req, res) => {
+  res.status(404).send({error: "unknown endpoint"})
+}
+
+app.use(unKnownEndPoint);
+
+
+
+const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`)
 });

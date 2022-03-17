@@ -14,8 +14,7 @@ Let's create a simple phonebook. In this part we will only be adding names to th
 * Step 9: Make it possible for users to delete entries from the phonebook. The deletion can be done through a dedicated button for each person in the phonebook list. You can confirm the action from the user by using the window.confirm method:
 * Step 10: Change the functionality so that if a number is added to an already existing user, the new number will replace the old number.
 * Step 11: Show a notification that lasts for a few seconds after a successful operation is executed.
-* Step 12: Open your application in two browsers. If you delete a person in browser 1 a short while before attempting to change the person's phone number in browser 2, you will get the following error message.
-* Step 13: 
+* Step 12: Open your application in two browsers. If you delete a person in browser 1 a short while before attempting to change the person's phone number in browser 2, you will get error message. Fix the issue.
 
 ## Start the Application
 
