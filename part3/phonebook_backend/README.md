@@ -19,6 +19,7 @@ NB: Because this is not a frontend project and we are not working with React, th
 - Step 8: Configure morgan so that it also shows the data sent in HTTP POST requests.
 - Step 9: Make the backend work with the frontend from the previous part.
 - Step 10: Deploy the backend to the internet.
+- Step 11: Generate a production build of your frontend, and add it to the internet application using the method introduced in this part.
 
 
 ## Start the Application

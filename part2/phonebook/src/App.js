@@ -47,7 +47,7 @@ function App() {
           personService
             .update(id, changePerson)
             .then(returnedPerson => {
-             setPersons( persons.map(person => person.id !== id ? person : returnedPerson));
+             setPersons( persons.map(n => n.id !== id ? person : returnedPerson));
              setMessage(`${returnedPerson.name}'s number is updated`)
               setTimeout(() => {
                 setMessage(null)
@@ -61,10 +61,12 @@ function App() {
 
               setPersons(persons.filter(n => n.id !== id))
             })
+       } else {
+            setMessage(null);
        }
     }
     else {
-       return  personService
+      personService
           .create(createNew).then(returnedPerson => {
             setPersons(persons.concat(returnedPerson)); 
             setMessage(`Added ${returnedPerson.name}`)
@@ -74,8 +76,8 @@ function App() {
           })
           
     }
-     setNewName("");
-      setNewNumber("");
+    setNewName("");
+    setNewNumber("");
   }
 
    
@@ -97,14 +99,18 @@ function App() {
             })
 
         setPersons(persons.filter(n => n.id !== deletePerson.id))
+
+        setMessage(`Deleted ${deletePerson.name}`)
+        setTimeout(() => {
+          setMessage(null)
+        }, 5000)   
+    }
+    else {
+        setMessage(null);
     }
 
     
-    setMessage(`Deleted ${deletePerson.name}`)
-        setTimeout(() => {
-          setMessage(null)
-        }, 5000)
-           
+    
   }
 
 

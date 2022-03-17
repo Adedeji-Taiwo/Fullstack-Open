@@ -21,6 +21,8 @@ app.use(morgan(':method :url :status :req[body] :res[content-length] - :response
 //middleware to use and allow for requests from all origins
 app.use(cors())
 
+//middleware to make express show static content
+app.use(express.static('build'))
 
 
 let persons = [
@@ -68,7 +70,7 @@ app.get('/info', (req, res) => {
 //Single person route
 app.get('/api/persons/:id', (req, res) => {
     const id = Number(req.params.id);
-    const person = persons.find(person => person.id === id);
+    const person = persons.find(personn => personn.id === id);
     
     if(person) {
         res.json(person);
