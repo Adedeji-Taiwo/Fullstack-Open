@@ -2,7 +2,7 @@ import React from 'react'
 
 const Notification = ({message}) => {
 
-     const color = message !== null && (message.includes("Deleted") || message.includes("removed")) ? true : false;
+     const color = message !== null && (message.includes("Deleted") || message.includes("removed") || message.includes("failed") ) ? true : false;
 
 
     if (message === null) {

@@ -47,7 +47,7 @@ function App() {
           personService
             .update(id, changePerson)
             .then(returnedPerson => {
-             setPersons( persons.map(n => n.id !== id ? person : returnedPerson));
+             setPersons( persons.map((person) => person.id !== id ? person : returnedPerson));
              setMessage(`${returnedPerson.name}'s number is updated`)
               setTimeout(() => {
                 setMessage(null)
@@ -67,12 +67,19 @@ function App() {
     }
     else {
       personService
-          .create(createNew).then(returnedPerson => {
-            setPersons(persons.concat(returnedPerson)); 
-            setMessage(`Added ${returnedPerson.name}`)
+          .create(createNew)
+          .then(createdPerson => {
+            setPersons(persons.concat(createdPerson)); 
+            setMessage(`Added ${createdPerson.name}`)
             setTimeout(() => {
               setMessage(null)
             }, 5000)
+          })
+          .catch(error => {
+              setMessage(`${error.response.data.error}`)
+              setTimeout(() => {
+                setMessage(null)
+              }, 5000)
           })
           
     }

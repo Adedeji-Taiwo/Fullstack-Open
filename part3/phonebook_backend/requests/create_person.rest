@@ -1,8 +1,8 @@
-POST http://localhost:3001/api/persons
+POST http://localhost:3001/api/persons/
 Content-Type: application/json
 
 
 {
-    "name": "REST clientx",
-    "number": "12345"
+    "name": "Rest Clients",
+    "number": "05500112"
 }

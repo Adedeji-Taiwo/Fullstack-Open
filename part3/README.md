@@ -6,4 +6,8 @@ In this part our focus shifts towards the backend, that is, towards implementing
 
 * Phonebook backend:  Exercise 3.1 - 3.10
 * Phonebook fullstack: Exercise 3.11
+* Command-line database: Exercise 3.12
+* Phonebook database: Exercise 3.13 - 3.20
+* Deploying the database backend to production: Exercise 3.21
+* Lint configuration: Exercise 3.22
   
