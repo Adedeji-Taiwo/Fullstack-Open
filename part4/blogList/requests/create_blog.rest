@@ -1,0 +1,10 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+
+{
+    "title": "Communicating with Servers",
+    "author": "Fina Heley",
+    "url": "https://greem.com/backend",
+    "likes": 17
+}

@@ -1,0 +1,10 @@
+PUT http://localhost:3003/api/blogs/6238c1785507046a62d3caa6
+
+
+
+{
+     "title": "Stopping the Uprising",
+    "author": "Kim Delly",
+    "url": "https://westinglog.com/world",
+    "likes": 220
+}
