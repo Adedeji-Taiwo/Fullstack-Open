@@ -7,7 +7,6 @@ describe('favorite blog', () => {
 
     test('is this particular one', () => {
         const result = favoriteBlog(listWithManyBlogs);
-        console.log(result);
 
 
         expect(result).toEqual(

@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRoZWd5YWlubyIsImlkIjoiNjIzZmI1NGE5NTRjMjU2MjE5ZjNiMDQxIiwiaWF0IjoxNjQ4NjU2NDQ5fQ.vX5bALxIlpAbGuvMHAggXxxXB16z3Pjj8CEJ4X1Px94
 
 {
-    "title": "Communicating with Servers",
-    "author": "Fina Heley",
-    "url": "https://greem.com/backend",
-    "likes": 17
+    "title": "Finding Mona",
+    "author": "Lima Andres",
+    "url": "https://columb.com/lifestyle",
+    "likes": 7399
 }
