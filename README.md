@@ -1,5 +1,5 @@
 # [Fullstack-Open 2022](https://fullstackopen.com/en/about)
-A collection of solutions to fullstack-open course (2022 edition) exercises from the University of Helsinki.
+A collection of my solutions to fullstack-open course (2022 edition) exercises from the University of Helsinki.
 
 This course is held at the Department of Computer Science at the University of Helsinki in Spring 2022.
 
