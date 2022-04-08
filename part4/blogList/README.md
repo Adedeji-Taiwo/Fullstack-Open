@@ -46,4 +46,4 @@ $ npm install
 # Start the application
 $ npm start
 ```
-Application can be accessed on [http://localhost:3000/](localhost)
+Application can be accessed on [http://localhost:3003/](localhost)
