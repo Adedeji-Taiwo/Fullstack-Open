@@ -170,7 +170,6 @@ const App = () => {
                 setTimeout(() => {
                     setNotification({ message: null, type: null });
                 }, 5000);
-                setBlogs(blogs.filter(n => n.id !== id));
             });
     };
 

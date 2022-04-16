@@ -1,7 +1,5 @@
 # [Fullstack-Open 2022](https://fullstackopen.com/en/about)
-A collection of solutions to fullstack-open course (2022 edition) exercises from the University of Helsinki.
-
-This course is held at the Department of Computer Science at the University of Helsinki in Spring 2022.
+A collection of solutions to fullstack-open course (2022 edition) exercises from the University of Helsinki Department of Computer Science at the University of Helsinki in Spring 2022.
 
 It serves as an introduction to modern web application development with JavaScript. The main focus is on building single page applications with ReactJS that use REST APIs built with Node.js. The course also contains a section on GraphQL, a modern alternative to REST APIs.
 The course covers testing, configuration and environment management, and the use of MongoDB for storing the application.
