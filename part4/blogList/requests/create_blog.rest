@@ -1,10 +1,10 @@
 POST http://localhost:3003/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImRoZWd5YWlubyIsImlkIjoiNjIzZmI1NGE5NTRjMjU2MjE5ZjNiMDQxIiwiaWF0IjoxNjQ4NjU2NDQ5fQ.vX5bALxIlpAbGuvMHAggXxxXB16z3Pjj8CEJ4X1Px94
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IndoYWxleHkiLCJpZCI6IjYyNDlmMmQyODUxNWYwM2Q2Y2NlMzNkYSIsImlhdCI6MTY0OTA1OTU3MH0.48OIIcMnT_qmuaKZ8Nr4zUiPjA56UwBZHN21dUw62lI
 
 {
-    "title": "Finding Mona",
-    "author": "Lima Andres",
-    "url": "https://columb.com/lifestyle",
-    "likes": 7399
+    "title": "esLint ia a powerful tool",
+    "author": "Webber Kendrick",
+    "url": "https://qwestinglogger.com/tooling",
+    "likes": 11
 }
