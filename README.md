@@ -5,22 +5,42 @@ It serves as an introduction to modern web application development with JavaScri
 The course covers testing, configuration and environment management, and the use of MongoDB for storing the application.
 
 
-### [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
+### Part 0 - Fundamentals of Web apps
+* General info
+* Fundamentals of Web apps
+
+### Part 1 - Introduction to React
+* Introduction to React
+* JavaScript
+* Component state, event handlers
+* A more complex state, debugging React apps
+
+### Part 2 - Communicating with server
+* Rendering a collection, modules
+*  Forms
+*  Getting data from server
+*  Altering data in server
+*  Adding styles to React app
+
+### Part 3 - Programming a server with NodeJS and Express
+*  Node.js and Express
+*  Deploying app to internet
+*  Saving data to MongoDB
+*  Validation and ESLint
 
 
-### [Part 1 - Introduction to React](https://fullstackopen.com/en/part1)
+### Part 4 - Testing Express servers, user administration
+* Structure of backend application, introduction to testing
+* Testing the backend
+*  User administration
+*  Token authentication
 
 
-### [Part 2 - Communicating with server](https://fullstackopen.com/en/part2)
-
-
-### [Part 3 - Programming a server with NodeJS and Express](https://fullstackopen.com/en/part3)
-
-
-### [Part 4 - Testing Express servers, user administration](https://fullstackopen.com/en/part4)
-
-
-### [Part 5 - Testing React apps](https://fullstackopen.com/en/part5)
+### Part 5 - Testing React apps
+* Login in frontend
+* props.children and proptypes
+*  Testing React apps
+*  End to end testing
 
 
 ### [Part 6 - State Management with Redux](https://fullstackopen.com/en/part6)
