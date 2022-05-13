@@ -22,7 +22,6 @@ describe('<newBlog /> form', () => {
         userEvent.click(submit);
 
         screen.debug();
-        console.log(createBlog.mock.calls[0]);
         expect(createBlog.mock.calls).toHaveLength(1);
         expect(createBlog.mock.calls[0][0].title).toBe('Saving the Joker');
         expect(createBlog.mock.calls[0][0].author).toBe('Harley Quin');
