@@ -14,7 +14,7 @@ const Blog = ({ blog, user, handleLikes, handleRemoval }) => {
     };
 
     const deleteButton = blog.user.name === user.name && (
-        <Button text = 'delete' onClick={handleRemoval}/>
+        <Button text = 'delete' onClick={handleRemoval} id='delete'/>
     );
 
     const blogStyle = {
@@ -28,19 +28,20 @@ const Blog = ({ blog, user, handleLikes, handleRemoval }) => {
 
     if (view) {
         return (
-            <div style={blogStyle}>
+            <div style={blogStyle} className="blog">
                 <p className='full-blog'>
                     <span>
                         <span className='blog-title'>{blog.title}</span> -
                         <span className='blog-author'>{blog.author}</span>
+                        <Button text = {view ? 'hide' : 'view'} onClick={toggleView}/>
                     </span>
-                    <Button text = {view ? 'hide' : 'view'} onClick={toggleView}/>
+
                 </p>
                 <p className='blog-url'>{blog.url}</p>
                 <p>
-                    <span className='blog-likes'>{blog.likes}</span> {' '}
-                    <span>{blog.likes === 1 ? 'like' : 'likes'}</span> {' '}
-                    <Button text = 'like' onClick = {handleLikes}/>
+                    <span className='blog-likes'>{blog.likes}</span>{' '}
+                    <span>{blog.likes === 1 ? 'like' : 'likes'}</span>{' '}
+                    <Button text = 'like' id='like' onClick = {handleLikes}/>
                 </p>
                 <p>{blog.user.name}</p>
                 <p>{deleteButton}</p>
