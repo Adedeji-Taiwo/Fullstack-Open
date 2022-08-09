@@ -15,7 +15,7 @@ So far, we have placed the application's state and state logic directly inside R
 ## Exercises
 * redux unicafe: Exercise 6.1 - 6.2
 * redux anecdotes:  Exercise 6.3 - 6.8
-* Blog list integration tests: Exercise 4.8 - 4.
+* redux toolkit (Better anecdotes): Exercise 6.9 - 6.12
 * Blog list expansion: Exercise 4.13 - 4.23
   
   

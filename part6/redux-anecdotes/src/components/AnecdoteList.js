@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { vote } from '../reducers/anecdoteReducer';
-
+import { voteAnecdote } from '../reducers/anecdoteReducer';
+import { notificationChange } from '../reducers/notificationReducer';
 
 const Anecdote = ({anecdote, handleVote}) => (
     <li>
@@ -15,20 +15,28 @@ const Anecdote = ({anecdote, handleVote}) => (
 
 const AnecdoteList = () => {
     const dispatch = useDispatch();
-    const anecdotes = useSelector(state => state.sort((a, b) => {
-       if (a.votes > b.votes)  return -1;
-        if (a.votes < b.votes) return 1;
-        return 0;  
-    }          
-    ));
+    const filter = useSelector(state => state.filter)
+    const anecdotes = [...(useSelector(state => state.anecdote))]
+                            .filter(item => (item.content).includes(filter))
+                            .sort((a,b) => b.votes - a.votes);
 
+                            console.log(useSelector(state => state))              
+   
+    const vote = (id) => {
+        const anecdote = anecdotes.find(n => n.id === id);
+        dispatch(voteAnecdote(anecdote.id))
+        dispatch(notificationChange(anecdote.content));
+    }
+
+   
+    console.log(filter);
   return (
     <ul>
         {anecdotes.map(anecdote =>
             <Anecdote 
                 key={anecdote.id}
                 anecdote={anecdote}
-                handleVote={() => dispatch(vote(anecdote.id))}
+                handleVote={() => vote(anecdote.id)}
             />
         )}
     </ul>
