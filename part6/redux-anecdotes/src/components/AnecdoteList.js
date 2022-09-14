@@ -17,16 +17,16 @@ const AnecdoteList = () => {
     const dispatch = useDispatch();
     const filter = useSelector(state => state.filter)
     const anecdotes = [...(useSelector(state => state.anecdote))]
-                            .filter(item => (item.content).includes(filter))
+                            .filter(item => (item.content.toLowerCase()).includes(filter.toLowerCase()))
                             .sort((a,b) => b.votes - a.votes);
 
                             console.log(useSelector(state => state))              
    
     const vote = (id) => {
         const anecdote = anecdotes.find(n => n.id === id);
-        dispatch(voteAnecdote(anecdote.id))
-        dispatch(notificationChange(anecdote.content));
-    }
+        dispatch(voteAnecdote(anecdote))
+        dispatch(notificationChange(`You voted '${anecdote.content}.'`, 5000));
+    };
 
    
     console.log(filter);

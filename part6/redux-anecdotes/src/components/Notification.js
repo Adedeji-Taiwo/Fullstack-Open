@@ -7,21 +7,18 @@ const Notification = () => {
   const style = {
     border: 'solid',
     padding: 10,
-    borderWidth: 1
+    borderWidth: 2,
+    borderRadius: 5,
+    backgroundColor: "#FcFcFc",
+    borderColor: 'green',
   }
 
-  
-  if(notification.length > 0) {
-    return (
-      <div style={style}>
-      {`You voted '${notification[0].notification}'`}
-    </div>
-    )
-} 
-
+ 
 
   return (
-    <></>
+  <>
+    {notification && <div style={style}> {notification}</div>}
+  </>
   ) 
 
 }
