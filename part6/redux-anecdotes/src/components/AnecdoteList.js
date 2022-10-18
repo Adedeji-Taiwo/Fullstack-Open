@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { connect } from 'react-redux';
 import { voteAnecdote } from '../reducers/anecdoteReducer';
 import { setNotification } from '../reducers/notificationReducer';
 
@@ -13,26 +13,20 @@ const Anecdote = ({anecdote, handleVote}) => (
 
 
 
-const AnecdoteList = () => {
-    const dispatch = useDispatch();
-    const filter = useSelector(state => state.filter)
-    const anecdotes = [...(useSelector(state => state.anecdote))]
-                            .filter(item => (item.content.toLowerCase()).includes(filter.toLowerCase()))
-                            .sort((a,b) => b.votes - a.votes);
+const AnecdoteList = (props) => {
 
-                            console.log(useSelector(state => state))              
+                              
    
     const vote = (id) => {
-        const anecdote = anecdotes.find(n => n.id === id);
-        dispatch(voteAnecdote(anecdote))
-        dispatch(setNotification(`You voted '${anecdote.content}.'`, 5000));
+        const anecdote = props.anecdotes.find(n => n.id === id);
+        props.voteAnecdote(anecdote)
+        props.setNotification(`You voted '${anecdote.content}.'`, 5000);
     };
 
    
-    console.log(filter);
   return (
     <ul>
-        {anecdotes.map(anecdote =>
+        {props.anecdotes.map(anecdote =>
             <Anecdote 
                 key={anecdote.id}
                 anecdote={anecdote}
@@ -43,4 +37,24 @@ const AnecdoteList = () => {
   )
 }
 
-export default AnecdoteList;
+const mapStateToProps = (state) => {
+    return {
+        filter: state.filter,
+        anecdotes: state.anecdote.filter(item => (item.content.toLowerCase()).includes(state.filter.toLowerCase()))
+        .sort((a,b) => b.votes - a.votes),
+    }
+}
+
+const mapDispatchToProps = {
+    voteAnecdote,
+    setNotification
+}
+
+
+
+const ConnectedAnecdoteLists = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(AnecdoteList)
+
+export default ConnectedAnecdoteLists;

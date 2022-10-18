@@ -37,7 +37,7 @@
     },
     {
       "content": "The risk to reward is greater",
-      "votes": 8,
+      "votes": 9,
       "id": "grVY2cp"
     },
     {
@@ -47,8 +47,13 @@
     },
     {
       "content": "Time to level up",
-      "votes": 1,
+      "votes": 2,
       "id": "Am6nTQS"
+    },
+    {
+      "content": "Redux completed",
+      "votes": 5,
+      "id": "ctbYOTd"
     }
   ]
 }
